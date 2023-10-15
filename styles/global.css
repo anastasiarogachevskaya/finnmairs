@@ -29,3 +29,12 @@ h2 {
   font-weight: 400;
   text-align: center;
 }
+@media (max-width: 1050px) {
+  section {
+    max-width: 768px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}

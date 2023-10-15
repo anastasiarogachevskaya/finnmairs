@@ -1,9 +1,10 @@
 .backgroundImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 0;
+  }
+  
+  .card {
+    width: 100% !important;
+    height: auto !important;
 }
 .footer {
   display: flex;

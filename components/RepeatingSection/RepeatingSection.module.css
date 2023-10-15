@@ -1,41 +1,45 @@
 /* RepeatingSection.module.css */
+/* Base styles (for mobile) */
 .sectionContainer {
   display: flex;
+  flex-direction: column;
+    align-items: center;
   gap: 20px;
-  /* For the gap between image and text */
   margin-bottom: 20px;
-  /* For the gap between sections */
-}
-
-.imageRight {
-  flex-direction: row-reverse;
-  /* If the image is on the right */
 }
 
 .imageBox,
 .textBox {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+    max-width: 500px;
+    height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
+  box-sizing: border-box;
+}
+
+.imageBox img {
+  width: 100%;
+  height: auto;
 }
 
 .textBox {
   display: flex;
-    flex-direction: column;
-    padding: 0px 22px;
+  flex-direction: column;
+  padding: 90px 0 20px;
     position: relative;
-  /* Padding from left border */
 }
 
 .text {
   padding: 0 38px;
+    /* Adjust as necessary for mobile layout */
   font-size: 15px;
   line-height: 2;
   color: #FFF;
 }
+
 .pattern {
   height: 70px;
   width: calc(100% - 44px);
@@ -43,4 +47,54 @@
   top: 20px;
   position: absolute;
   left: 22px;
+}
+/* Tablet styles */
+@media (min-width: 788px) and (max-width: 1050px) {
+  .sectionContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+    .imageRight {
+      flex-direction: row-reverse;
+    }
+  .imageBox,
+  .textBox {
+    width: 374px;
+    height: 374px;
+  }
+
+  .imageBox img {
+    width: 374px;
+    height: 374px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 19px;
+  }
+
+  .pattern {
+    transform: scale(0.5);
+    width: 180%;
+    left: -150px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1051px) {
+  .imageBox,
+  .textBox {
+    width: 500px;
+      height: 500px;
+  }
+
+  .imageBox img {
+    max-width: 500px;
+      max-height: 500px;
+  }
+
+  .textBox {
+    padding: 0px 22px;
+  }
 }

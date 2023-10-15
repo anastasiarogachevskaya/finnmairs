@@ -17,7 +17,14 @@ const RepeatingSection: React.FC<SectionProps> = ({
       }`}
     >
       <div className={styles.imageBox}>
-        <Image src={imageUrl} alt="Section image" width="500" height="500" />
+        <Image
+          src={imageUrl}
+          alt="Section image"
+          quality={100}
+          className={styles.imageBoxImage}
+          width={500}
+          height={500}
+        />
       </div>
       <div className={styles.textBox} style={{ backgroundColor: background }}>
         <div

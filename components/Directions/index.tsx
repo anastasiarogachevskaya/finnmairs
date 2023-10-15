@@ -21,7 +21,13 @@ const Directions: React.FC = () => {
 
       <div className={`${styles.mapContainer} ${inView ? styles.fadeIn : ''}`}>
         <div className={styles.mapBackground}>
-          <Image src="/img/map.svg" alt="Map" layout="fill" objectFit="cover" />
+          <Image
+            src="/img/map.svg"
+            alt="Map"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
         </div>
         <div className={styles.mapOverlay}>
           <span className={styles.mapTextLeft}>
@@ -35,6 +41,7 @@ const Directions: React.FC = () => {
             width={415}
             height={320}
             className={styles.mapOverlayImg}
+            quality={100}
           />
           <span className={styles.mapTextRight}>
             <div className={styles.line} />
