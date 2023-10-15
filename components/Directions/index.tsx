@@ -1,15 +1,25 @@
 // components/Directions/index.tsx
 import Image from 'next/image';
+
+import { useInView } from 'react-intersection-observer';
+
 import styles from './Directions.module.css';
 
 const Directions: React.FC = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // The animation will only be triggered once
+    threshold: 0.1, // Percentage of the element's visibility before triggering
+  });
+
   return (
-    <section className={styles.mainDirections}>
-      <div className={styles.svgPattern} />
+    <section className={styles.mainDirections} ref={ref}>
+      <div className={`${styles.svgPattern} ${inView ? styles.fadeIn : ''}`} />
 
-      <h2 className={styles.title}>Our main directions</h2>
+      <h2 className={`${styles.title} ${inView ? styles.fadeIn : ''}`}>
+        Our main directions
+      </h2>
 
-      <div className={styles.mapContainer}>
+      <div className={`${styles.mapContainer} ${inView ? styles.fadeIn : ''}`}>
         <div className={styles.mapBackground}>
           <Image src="/img/map.svg" alt="Map" layout="fill" objectFit="cover" />
         </div>
@@ -34,7 +44,11 @@ const Directions: React.FC = () => {
       </div>
 
       {/* Contact button */}
-      <div className={styles.contactButtonContainer}>
+      <div
+        className={`${styles.contactButtonContainer} ${
+          inView ? styles.fadeIn : ''
+        }`}
+      >
         <button className={styles.contactButton}>Contact us online</button>
       </div>
     </section>
