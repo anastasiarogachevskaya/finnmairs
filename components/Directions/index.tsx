@@ -24,6 +24,7 @@ const Directions: React.FC = () => {
             layout="responsive"
             width={415}
             height={320}
+            className={styles.mapOverlayImg}
           />
           <span className={styles.mapTextRight}>
             <div className={styles.line} />

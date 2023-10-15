@@ -11,6 +11,7 @@
 .svgPattern {
   background: url('/img/pattern.svg') repeat;
   height: 18px;
+  animation: fadeIn 1.5s ease-in;
 }
 
 .title {
@@ -19,12 +20,13 @@
   padding-bottom: 20px;
   margin-top: 30px;
   font-weight: 400;
+  animation: fadeIn 1.5s ease-in;
 }
 
 .mapContainer {
   position: relative;
   height: 500px;
-  /* maybe */
+  animation: fadeIn 1.5s ease-in;
 }
 
 .mapBackground {
@@ -43,6 +45,9 @@
   align-items: center;
 }
 
+.mapOverlayImg {
+  width: 415px !important;
+}
 .mapTextLeft,
 .mapTextRight {
   font-size: 20px;
@@ -72,11 +77,13 @@
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .contactButton:hover {
-  /* Optional: Add hover effects */
+  background-color: #005999;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .line {
@@ -86,4 +93,13 @@
   margin: 0 2px;
   background-color: #999999;
   display: inline-block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
