@@ -10,6 +10,7 @@
 
 .imageBox,
 .textBox {
+  opacity: 0;
   width: 100%;
     max-width: 500px;
     height: auto;
@@ -83,6 +84,14 @@
 
 /* Desktop styles */
 @media (min-width: 1051px) {
+  .sectionContainer {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .imageRight {
+      flex-direction: row-reverse;
+    }
   .imageBox,
   .textBox {
     width: 500px;
@@ -97,4 +106,36 @@
   .textBox {
     padding: 0px 22px;
   }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  animation: slideInFromLeft 2s forwards;
+}
+
+.slideInRight {
+  animation: slideInFromRight 2s forwards;
 }
