@@ -1,13 +1,4 @@
 /* components/Directions/Directions.module.css */
-.mainDirections {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 50px 10px;
-  position: relative;
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
 .fadeIn {
   animation: fadeIn 1.5s ease-in forwards;
 }
@@ -19,11 +10,6 @@
 }
 
 .title {
-  font-size: 50px;
-  color: #006FB9;
-  padding-bottom: 20px;
-  margin-top: 30px;
-  font-weight: 400;
   opacity: 0;
     animation-delay: 0.5s;
 }
@@ -71,6 +57,7 @@
 
 .contactButtonContainer {
   margin-top: -25px;
+  margin-bottom: 75px;
   opacity: 0;
     animation-delay: 1.5s;
 }

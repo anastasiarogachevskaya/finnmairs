@@ -12,7 +12,7 @@ const Directions: React.FC = () => {
   });
 
   return (
-    <section className={styles.mainDirections} ref={ref}>
+    <section ref={ref}>
       <div className={`${styles.svgPattern} ${inView ? styles.fadeIn : ''}`} />
 
       <h2 className={`${styles.title} ${inView ? styles.fadeIn : ''}`}>

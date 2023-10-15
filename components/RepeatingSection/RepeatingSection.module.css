@@ -1,0 +1,46 @@
+/* RepeatingSection.module.css */
+.sectionContainer {
+  display: flex;
+  gap: 20px;
+  /* For the gap between image and text */
+  margin-bottom: 20px;
+  /* For the gap between sections */
+}
+
+.imageRight {
+  flex-direction: row-reverse;
+  /* If the image is on the right */
+}
+
+.imageBox,
+.textBox {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.textBox {
+  display: flex;
+    flex-direction: column;
+    padding: 0px 22px;
+    position: relative;
+  /* Padding from left border */
+}
+
+.text {
+  padding: 0 38px;
+  font-size: 15px;
+  line-height: 2;
+  color: #FFF;
+}
+.pattern {
+  height: 70px;
+  width: calc(100% - 44px);
+  opacity: 0.5;
+  top: 20px;
+  position: absolute;
+  left: 22px;
+}
