@@ -1,0 +1,89 @@
+/* components/Directions/Directions.module.css */
+.mainDirections {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 50px 10px;
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.svgPattern {
+  background: url('/img/pattern.svg') repeat;
+  height: 18px;
+}
+
+.title {
+  font-size: 50px;
+  color: #006FB9;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.mapContainer {
+  position: relative;
+  height: 500px;
+  /* maybe */
+}
+
+.mapBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mapOverlay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapTextLeft,
+.mapTextRight {
+  font-size: 20px;
+  color: #006FB9;
+  font-weight: 700;
+}
+
+.mapTextLeft {
+  margin-right: 10px;
+}
+
+.mapTextRight {
+  margin-left: 10px;
+}
+
+.contactButtonContainer {
+  margin-top: -25px;
+}
+
+.contactButton {
+  background-color: #006FB9;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactButton:hover {
+  /* Optional: Add hover effects */
+}
+
+.line {
+  width: 26px;
+  height: 1.09px;
+  padding: 0 2px;
+  margin: 0 2px;
+  background-color: #999999;
+  display: inline-block;
+}
