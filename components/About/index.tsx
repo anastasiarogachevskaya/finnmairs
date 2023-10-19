@@ -30,7 +30,18 @@ const About: React.FC = () => {
               </p>
             </div>
           </InView>
-
+          <InView
+            as="div"
+            onChange={(inView) => inView && setShowFeature1(true)}
+          >
+            <Image
+              src="/img/delimeter.svg"
+              alt="delimeter"
+              width={25}
+              height={18}
+              className={styles.delimeter}
+            />
+          </InView>
           <InView
             as="div"
             onChange={(inView) => inView && setShowFeature2(true)}
@@ -53,7 +64,18 @@ const About: React.FC = () => {
               </p>
             </div>
           </InView>
-
+          <InView
+            as="div"
+            onChange={(inView) => inView && setShowFeature2(true)}
+          >
+            <Image
+              src="/img/delimeter.svg"
+              alt="delimeter"
+              width={25}
+              height={18}
+              className={styles.delimeter}
+            />
+          </InView>
           <InView
             as="div"
             onChange={(inView) => inView && setShowFeature3(true)}
