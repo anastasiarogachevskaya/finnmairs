@@ -1,7 +1,5 @@
-// This could be in your main page or another component file
 import RepeatingSection from './Section';
 import { SectionProps } from './types';
-import styles from './WhyFinmairs.module.css';
 
 // Example sections data
 const sectionsData: SectionProps[] = [
@@ -38,7 +36,6 @@ const sectionsData: SectionProps[] = [
 const WhyFinmairs: React.FC = () => {
   return (
     <section>
-      <h2>Why FINMAIRS</h2>
       {sectionsData.map((section, index) => (
         <RepeatingSection key={index} {...section} />
       ))}

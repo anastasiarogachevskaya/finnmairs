@@ -1,0 +1,94 @@
+/* components/About/About.module.css */
+/* Base styles (for mobile) */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.title {
+  margin: 22px;
+  padding: 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  max-width: 350px;
+    margin: 0 auto;
+}
+
+.feature p {
+  color: #006FB9;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+  flex: 10;
+}
+
+.feature img {
+  flex: 110px;
+}
+
+/* Tablet styles */
+@media (min-width: 788px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    .feature {
+      max-width: initial;
+      margin: ininitial;
+    }
+  
+    .feature p {
+      flex: initial;
+    }
+  
+    .feature img {
+      flex: initial;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1051px) {
+  .whyFinmairsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .title {
+    flex-basis: 30%;
+  }
+
+  .features {
+    flex-basis: 70%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
