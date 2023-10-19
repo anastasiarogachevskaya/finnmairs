@@ -1,0 +1,58 @@
+.carousel {
+  position: relative;
+  z-index: 1;
+  height: 400px;
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 42px;
+  text-align: left;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  height: 100%;
+  font-weight: 400;
+  text-shadow: -1px 2px 10px #000;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  text-shadow: -1px 2px 10px #000;
+  height: 400px;
+  width: auto;
+}
+
+/* Tablet styles */
+@media (min-width: 788px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel {
+    height: 415px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1051px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .carousel {
+    height: 555px;
+  }
+}
