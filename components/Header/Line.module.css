@@ -1,0 +1,43 @@
+.thing {
+  max-width: 1024px;
+  margin: 15px auto 0;
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #B3B3B3;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orange {
+  background-color: #FF6633;
+  right: -10px;
+}
+
+.blue {
+  background-color: #006FB9;
+  left: -10px;
+}
+
+.flex {
+  z-index: 100;
+  top: -10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.triangle {
+  margin-top: -3px;
+}

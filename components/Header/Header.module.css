@@ -1,0 +1,33 @@
+/* components/Header/Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact {
+  margin: 0 10px;
+  color: #006FB9;
+  transition: color 0.3s;
+}
+
+.contact:hover {
+  color: #025e9c;
+  text-shadow: -1px 1px 1px #006fb92b;
+
+}
+
+.horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menuitem {
+  margin-right: 20px;
+}
