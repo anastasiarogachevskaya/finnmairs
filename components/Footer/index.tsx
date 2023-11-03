@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           src="/img/card.jpg"
           alt="Card"
           width="1024"
-          height="555"
+          height="553"
           quality={100}
           className={styles.card}
         />

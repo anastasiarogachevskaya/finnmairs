@@ -1,5 +1,7 @@
 .backgroundImage {
   padding: 0;
+    margin-bottom: -6px;
+      background: transparent;
   }
   
   .card {
