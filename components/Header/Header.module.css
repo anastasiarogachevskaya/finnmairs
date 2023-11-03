@@ -1,8 +1,10 @@
 /* components/Header/Header.module.css */
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
 
 .contacts {
@@ -30,4 +32,45 @@
 
 .menuitem {
   margin-right: 20px;
+}
+@media (max-width: 787px) {
+  .logo {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .menu {
+    width: 100%;
+    margin: 10px 0 20px;
+  }
+
+  .horizontal {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 788px) and (max-width: 1050px) {
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1051px) {
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex {
+    flex-wrap: nowrap;
+  }
 }

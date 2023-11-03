@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './Carousel.module.css';
 
@@ -7,11 +6,8 @@ const Carousel = () => {
   return (
     <section>
       <div className={styles.carousel}>
-        <Image
+        <img
           src="/img/MainImageGroup.png"
-          width="1024"
-          height="555"
-          quality={100}
           alt="Finmairs - your reliable logistics partner"
           className={styles.image}
         />

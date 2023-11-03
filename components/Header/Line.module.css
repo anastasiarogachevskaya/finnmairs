@@ -1,6 +1,5 @@
 .thing {
-  max-width: 1024px;
-  margin: 15px auto 0;
+  margin: 15px 10px 0;
   position: relative;
 }
 
@@ -35,9 +34,29 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1024px;
 }
 
 .triangle {
   margin-top: -3px;
+}
+/* Tablet styles */
+@media (min-width: 788px) {
+  .thing {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .triangle {
+    display: block;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1051px) {
+
+  .thing,
+  .flex {
+    max-width: 1024px;
+  }
 }
